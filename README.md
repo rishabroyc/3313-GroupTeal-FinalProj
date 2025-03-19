@@ -1,1 +1,2 @@
-# 3313-GroupTeal-FinalProj
+
+## Project info
