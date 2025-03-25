@@ -1,0 +1,15 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=git
+command=/usr/bin/cmake;-P;/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/_deps/zlib-subbuild/zlib-populate-prefix/tmp/zlib-populate-gitclone.cmake
+source_dir=/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/_deps/zlib-src
+work_dir=/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/_deps
+repository=https://github.com/zlib-ng/zlib-ng
+remote=origin
+init_submodules=TRUE
+recurse_submodules=--recursive
+submodules=
+CMP0097=NEW
+

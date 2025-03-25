@@ -1,0 +1,17 @@
+{
+    "configurations": [
+      {
+        "name": "WSL",
+        "includePath": [
+          "${workspaceFolder}/Server/crow/include"
+        ],
+        "defines": [],
+        "compilerPath": "${default}",
+        "cStandard": "c11",
+        "cppStandard": "c++17",
+        "intelliSenseMode": "linux-gcc-x64"
+      }
+    ],
+    "version": 4
+  }
+  
