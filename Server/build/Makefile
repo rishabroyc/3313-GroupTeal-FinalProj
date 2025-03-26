@@ -221,19 +221,6 @@ zlib/fast:
 .PHONY : zlib/fast
 
 #=============================================================================
-# Target rules for targets named zlibstatic
-
-# Build rule for target.
-zlibstatic: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zlibstatic
-.PHONY : zlibstatic
-
-# fast build rule for target.
-zlibstatic/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/build
-.PHONY : zlibstatic/fast
-
-#=============================================================================
 # Target rules for targets named curl_uninstall
 
 # Build rule for target.
@@ -372,7 +359,6 @@ help:
 	@echo "... libcurl_shared"
 	@echo "... server"
 	@echo "... zlib"
-	@echo "... zlibstatic"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

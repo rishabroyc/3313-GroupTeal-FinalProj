@@ -6,11 +6,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Add Crow as a subdirectory (expects crow to be inside lib/)
 add_subdirectory(crow)
+add_subdirectory(cpr)
 
 # Define your executable
 add_executable(server main.cpp)
 
-add_subdirectory(cpr)
 target_link_libraries(server PRIVATE Crow::Crow cpr::cpr)
 
 # Link it to the Crow library

@@ -169,7 +169,6 @@ _deps/curl-build/lib/clean: _deps/curl-build/lib/CMakeFiles/libcurl_shared.dir/c
 
 # Recursive "all" directory target.
 _deps/zlib-build/all: _deps/zlib-build/CMakeFiles/zlib.dir/all
-_deps/zlib-build/all: _deps/zlib-build/CMakeFiles/zlibstatic.dir/all
 .PHONY : _deps/zlib-build/all
 
 # Recursive "preinstall" directory target.
@@ -178,7 +177,6 @@ _deps/zlib-build/preinstall:
 
 # Recursive "clean" directory target.
 _deps/zlib-build/clean: _deps/zlib-build/CMakeFiles/zlib.dir/clean
-_deps/zlib-build/clean: _deps/zlib-build/CMakeFiles/zlibstatic.dir/clean
 .PHONY : _deps/zlib-build/clean
 
 #=============================================================================
@@ -258,12 +256,12 @@ CMakeFiles/server.dir/all: _deps/curl-build/lib/CMakeFiles/libcurl_shared.dir/al
 CMakeFiles/server.dir/all: cpr/cpr/CMakeFiles/cpr.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" --progress-num=68 "Built target server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" --progress-num=81 "Built target server"
 .PHONY : CMakeFiles/server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" 66
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" 79
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" 0
 .PHONY : CMakeFiles/server.dir/rule
@@ -310,12 +308,12 @@ crow/CMakeFiles/uninstall.dir/clean:
 _deps/zlib-build/CMakeFiles/zlib.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" --progress-num=69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84 "Built target zlib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" --progress-num=82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target zlib"
 .PHONY : _deps/zlib-build/CMakeFiles/zlib.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/zlib-build/CMakeFiles/zlib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" 16
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" 19
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/zlib-build/CMakeFiles/zlib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" 0
 .PHONY : _deps/zlib-build/CMakeFiles/zlib.dir/rule
@@ -328,32 +326,6 @@ zlib: _deps/zlib-build/CMakeFiles/zlib.dir/rule
 _deps/zlib-build/CMakeFiles/zlib.dir/clean:
 	$(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/clean
 .PHONY : _deps/zlib-build/CMakeFiles/zlib.dir/clean
-
-#=============================================================================
-# Target rules for target _deps/zlib-build/CMakeFiles/zlibstatic.dir
-
-# All Build rule for target.
-_deps/zlib-build/CMakeFiles/zlibstatic.dir/all:
-	$(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/depend
-	$(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" --progress-num=85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target zlibstatic"
-.PHONY : _deps/zlib-build/CMakeFiles/zlibstatic.dir/all
-
-# Build rule for subdir invocation for target.
-_deps/zlib-build/CMakeFiles/zlibstatic.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/zlib-build/CMakeFiles/zlibstatic.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" 0
-.PHONY : _deps/zlib-build/CMakeFiles/zlibstatic.dir/rule
-
-# Convenience name for target.
-zlibstatic: _deps/zlib-build/CMakeFiles/zlibstatic.dir/rule
-.PHONY : zlibstatic
-
-# clean rule for target.
-_deps/zlib-build/CMakeFiles/zlibstatic.dir/clean:
-	$(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/clean
-.PHONY : _deps/zlib-build/CMakeFiles/zlibstatic.dir/clean
 
 #=============================================================================
 # Target rules for target _deps/curl-build/CMakeFiles/curl_uninstall.dir
@@ -414,12 +386,12 @@ _deps/curl-build/docs/CMakeFiles/curl-generate-curl-config.1.dir/clean:
 _deps/curl-build/docs/CMakeFiles/curl-generate-mk-ca-bundle.1.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/curl-build/docs/CMakeFiles/curl-generate-mk-ca-bundle.1.dir/build.make _deps/curl-build/docs/CMakeFiles/curl-generate-mk-ca-bundle.1.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/curl-build/docs/CMakeFiles/curl-generate-mk-ca-bundle.1.dir/build.make _deps/curl-build/docs/CMakeFiles/curl-generate-mk-ca-bundle.1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" --progress-num=10 "Built target curl-generate-mk-ca-bundle.1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" --progress-num= "Built target curl-generate-mk-ca-bundle.1"
 .PHONY : _deps/curl-build/docs/CMakeFiles/curl-generate-mk-ca-bundle.1.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/curl-build/docs/CMakeFiles/curl-generate-mk-ca-bundle.1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" 1
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/curl-build/docs/CMakeFiles/curl-generate-mk-ca-bundle.1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" 0
 .PHONY : _deps/curl-build/docs/CMakeFiles/curl-generate-mk-ca-bundle.1.dir/rule
@@ -440,12 +412,12 @@ _deps/curl-build/docs/CMakeFiles/curl-generate-mk-ca-bundle.1.dir/clean:
 _deps/curl-build/docs/libcurl/CMakeFiles/curl-man.dir/all: _deps/curl-build/docs/libcurl/opts/CMakeFiles/curl-opts-man.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/curl-build/docs/libcurl/CMakeFiles/curl-man.dir/build.make _deps/curl-build/docs/libcurl/CMakeFiles/curl-man.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/curl-build/docs/libcurl/CMakeFiles/curl-man.dir/build.make _deps/curl-build/docs/libcurl/CMakeFiles/curl-man.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" --progress-num= "Built target curl-man"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" --progress-num=12 "Built target curl-man"
 .PHONY : _deps/curl-build/docs/libcurl/CMakeFiles/curl-man.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/curl-build/docs/libcurl/CMakeFiles/curl-man.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" 1
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/curl-build/docs/libcurl/CMakeFiles/curl-man.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" 0
 .PHONY : _deps/curl-build/docs/libcurl/CMakeFiles/curl-man.dir/rule
@@ -466,7 +438,7 @@ _deps/curl-build/docs/libcurl/CMakeFiles/curl-man.dir/clean:
 _deps/curl-build/docs/libcurl/opts/CMakeFiles/curl-opts-man.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/curl-build/docs/libcurl/opts/CMakeFiles/curl-opts-man.dir/build.make _deps/curl-build/docs/libcurl/opts/CMakeFiles/curl-opts-man.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/curl-build/docs/libcurl/opts/CMakeFiles/curl-opts-man.dir/build.make _deps/curl-build/docs/libcurl/opts/CMakeFiles/curl-opts-man.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" --progress-num=11 "Built target curl-opts-man"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" --progress-num=13 "Built target curl-opts-man"
 .PHONY : _deps/curl-build/docs/libcurl/opts/CMakeFiles/curl-opts-man.dir/all
 
 # Build rule for subdir invocation for target.
@@ -492,12 +464,12 @@ _deps/curl-build/docs/libcurl/opts/CMakeFiles/curl-opts-man.dir/clean:
 _deps/curl-build/lib/CMakeFiles/libcurl_shared.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/curl-build/lib/CMakeFiles/libcurl_shared.dir/build.make _deps/curl-build/lib/CMakeFiles/libcurl_shared.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/curl-build/lib/CMakeFiles/libcurl_shared.dir/build.make _deps/curl-build/lib/CMakeFiles/libcurl_shared.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" --progress-num=12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67 "Built target libcurl_shared"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" --progress-num=14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80 "Built target libcurl_shared"
 .PHONY : _deps/curl-build/lib/CMakeFiles/libcurl_shared.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/curl-build/lib/CMakeFiles/libcurl_shared.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" 56
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" 67
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/curl-build/lib/CMakeFiles/libcurl_shared.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" 0
 .PHONY : _deps/curl-build/lib/CMakeFiles/libcurl_shared.dir/rule
@@ -518,12 +490,12 @@ _deps/curl-build/lib/CMakeFiles/libcurl_shared.dir/clean:
 cpr/cpr/CMakeFiles/cpr.dir/all: _deps/curl-build/lib/CMakeFiles/libcurl_shared.dir/all
 	$(MAKE) $(MAKESILENT) -f cpr/cpr/CMakeFiles/cpr.dir/build.make cpr/cpr/CMakeFiles/cpr.dir/depend
 	$(MAKE) $(MAKESILENT) -f cpr/cpr/CMakeFiles/cpr.dir/build.make cpr/cpr/CMakeFiles/cpr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9 "Built target cpr"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target cpr"
 .PHONY : cpr/cpr/CMakeFiles/cpr.dir/all
 
 # Build rule for subdir invocation for target.
 cpr/cpr/CMakeFiles/cpr.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" 65
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" 78
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpr/cpr/CMakeFiles/cpr.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/CMakeFiles" 0
 .PHONY : cpr/cpr/CMakeFiles/cpr.dir/rule
