@@ -24,13 +24,13 @@
 /* lib/curl_config.h.in. Generated somehow by cmake.  */
 
 /* Location of default ca bundle */
-#define CURL_CA_BUNDLE "/etc/ssl/certs/ca-certificates.crt"
+#define CURL_CA_BUNDLE "auto"
 
 /* define "1" to use built-in ca store of TLS backend */
 /* #undef CURL_CA_FALLBACK */
 
 /* Location of default ca path */
-/* #undef CURL_CA_PATH */
+#define CURL_CA_PATH "auto"
 
 /* Default SSL backend */
 /* #undef CURL_DEFAULT_SSL_BACKEND */
@@ -196,7 +196,7 @@
 #define HAVE_BOOL_T 1
 
 /* Define to 1 if you have the __builtin_available function. */
-/* #undef HAVE_BUILTIN_AVAILABLE */
+#define HAVE_BUILTIN_AVAILABLE 1
 
 /* Define to 1 if you have the clock_gettime function and monotonic timer. */
 #define HAVE_CLOCK_GETTIME_MONOTONIC 1
@@ -251,7 +251,7 @@
 #define HAVE_GETPPID 1
 
 /* Define to 1 if you have the gethostbyname_r function. */
-#define HAVE_GETHOSTBYNAME_R 1
+/* #undef HAVE_GETHOSTBYNAME_R */
 
 /* gethostbyname_r() takes 3 args */
 /* #undef HAVE_GETHOSTBYNAME_R_3 */
@@ -260,7 +260,7 @@
 /* #undef HAVE_GETHOSTBYNAME_R_5 */
 
 /* gethostbyname_r() takes 6 args */
-#define HAVE_GETHOSTBYNAME_R_6 1
+/* #undef HAVE_GETHOSTBYNAME_R_6 */
 
 /* Define to 1 if you have the gethostname function. */
 #define HAVE_GETHOSTNAME 1
@@ -369,10 +369,10 @@
 #define HAVE_LIBGEN_H 1
 
 /* Define to 1 if you have the `idn2' library (-lidn2). */
-/* #undef HAVE_LIBIDN2 */
+#define HAVE_LIBIDN2 1
 
 /* Define to 1 if you have the idn2.h header file. */
-/* #undef HAVE_IDN2_H */
+#define HAVE_IDN2_H 1
 
 /* if zlib is available */
 #define HAVE_LIBZ 1
@@ -408,7 +408,7 @@
 #define HAVE_NETINET_UDP_H 1
 
 /* Define to 1 if you have the <linux/tcp.h> header file. */
-#define HAVE_LINUX_TCP_H 1
+/* #undef HAVE_LINUX_TCP_H */
 
 /* Define to 1 if you have the <net/if.h> header file. */
 #define HAVE_NET_IF_H 1
@@ -420,10 +420,10 @@
 #define HAVE_PIPE 1
 
 /* Define to 1 if you have the `eventfd' function. */
-#define HAVE_EVENTFD 1
+/* #undef HAVE_EVENTFD */
 
 /* If you have a fine poll */
-#define HAVE_POLL_FINE 1
+/* #undef HAVE_POLL_FINE */
 
 /* Define to 1 if you have the <poll.h> header file. */
 #define HAVE_POLL_H 1
@@ -438,7 +438,7 @@
 #define HAVE_PWD_H 1
 
 /* Define to 1 if OpenSSL has the `SSL_set0_wbio` function. */
-#define HAVE_SSL_SET0_WBIO 1
+/* #undef HAVE_SSL_SET0_WBIO */
 
 /* Define to 1 if you have the recv function. */
 #define HAVE_RECV 1
@@ -459,16 +459,16 @@
 #define HAVE_FSETXATTR 1
 
 /* fsetxattr() takes 5 args */
-#define HAVE_FSETXATTR_5 1
+/* #undef HAVE_FSETXATTR_5 */
 
 /* fsetxattr() takes 6 args */
-/* #undef HAVE_FSETXATTR_6 */
+#define HAVE_FSETXATTR_6 1
 
 /* Define to 1 if you have the `setlocale' function. */
 #define HAVE_SETLOCALE 1
 
 /* Define to 1 if you have the `setmode' function. */
-/* #undef HAVE_SETMODE */
+#define HAVE_SETMODE 1
 
 /* Define to 1 if you have the `setrlimit' function. */
 #define HAVE_SETRLIMIT 1
@@ -543,10 +543,10 @@
 #define HAVE_STRUCT_TIMEVAL 1
 
 /* Define to 1 if you have the <sys/eventfd.h> header file. */
-#define HAVE_SYS_EVENTFD_H 1
+/* #undef HAVE_SYS_EVENTFD_H */
 
 /* Define to 1 if you have the <sys/filio.h> header file. */
-/* #undef HAVE_SYS_FILIO_H */
+#define HAVE_SYS_FILIO_H 1
 
 /* Define to 1 if you have the <sys/wait.h> header file. */
 #define HAVE_SYS_WAIT_H 1
@@ -570,7 +570,7 @@
 #define HAVE_SYS_SOCKET_H 1
 
 /* Define to 1 if you have the <sys/sockio.h> header file. */
-/* #undef HAVE_SYS_SOCKIO_H */
+#define HAVE_SYS_SOCKIO_H 1
 
 /* Define to 1 if you have the <sys/stat.h> header file. */
 #define HAVE_SYS_STAT_H 1
@@ -591,7 +591,7 @@
 #define HAVE_TERMIOS_H 1
 
 /* Define to 1 if you have the <termio.h> header file. */
-#define HAVE_TERMIO_H 1
+/* #undef HAVE_TERMIO_H */
 
 /* Define to 1 if you have the <unistd.h> header file. */
 #define HAVE_UNISTD_H 1
@@ -618,7 +618,7 @@
 /* #undef NEED_REENTRANT */
 
 /* cpu-machine-OS */
-#define OS "Linux"
+#define OS "Darwin"
 
 /* Name of package */
 /* #undef PACKAGE */
@@ -687,7 +687,7 @@
 /* #undef USE_GNUTLS */
 
 /* if Secure Transport is enabled */
-/* #undef USE_SECTRANSP */
+#define USE_SECTRANSP 1
 
 /* if mbedTLS is enabled */
 /* #undef USE_MBEDTLS */
@@ -723,7 +723,7 @@
 /* #undef USE_OPENLDAP */
 
 /* if OpenSSL is in use */
-#define USE_OPENSSL 1
+/* #undef USE_OPENSSL */
 
 /* if librtmp/rtmpdump is in use */
 /* #undef USE_LIBRTMP */
@@ -742,7 +742,7 @@
 /* #undef CURL_DISABLE_OPENSSL_AUTO_LOAD_CONFIG */
 
 /* to enable NGHTTP2  */
-/* #undef USE_NGHTTP2 */
+#define USE_NGHTTP2 1
 
 /* to enable NGTCP2 */
 /* #undef USE_NGTCP2 */
@@ -802,7 +802,7 @@
 /* #undef ssize_t */
 
 /* Define to 1 if you have the mach_absolute_time function. */
-/* #undef HAVE_MACH_ABSOLUTE_TIME */
+#define HAVE_MACH_ABSOLUTE_TIME 1
 
 /* to enable Windows IDN */
 /* #undef USE_WIN32_IDN */
@@ -814,13 +814,13 @@
 /* #undef USE_WEBSOCKETS */
 
 /* Define to 1 if OpenSSL has the SSL_CTX_set_srp_username function. */
-#define HAVE_OPENSSL_SRP 1
+/* #undef HAVE_OPENSSL_SRP */
 
 /* Define to 1 if GnuTLS has the gnutls_srp_verifier function. */
 /* #undef HAVE_GNUTLS_SRP */
 
 /* Define to 1 to enable TLS-SRP support. */
-#define USE_TLS_SRP 1
+/* #undef USE_TLS_SRP */
 
 /* Define to 1 to query for HTTPSRR when using DoH */
 /* #undef USE_HTTPSRR */

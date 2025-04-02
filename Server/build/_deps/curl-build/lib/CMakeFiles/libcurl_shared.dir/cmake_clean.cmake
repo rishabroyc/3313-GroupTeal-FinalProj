@@ -338,10 +338,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/libcurl_shared.dir/warnless.c.o.d"
   "CMakeFiles/libcurl_shared.dir/ws.c.o"
   "CMakeFiles/libcurl_shared.dir/ws.c.o.d"
+  "libcurl.4.8.0.dylib"
+  "libcurl.4.dylib"
+  "libcurl.dylib"
   "libcurl.pdb"
-  "libcurl.so"
-  "libcurl.so.4"
-  "libcurl.so.4.8.0"
 )
 
 # Per-language clean rules from dependency scanning.

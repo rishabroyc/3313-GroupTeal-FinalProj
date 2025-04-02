@@ -54,10 +54,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/cpr.dir/unix_socket.cpp.o.d"
   "CMakeFiles/cpr.dir/util.cpp.o"
   "CMakeFiles/cpr.dir/util.cpp.o.d"
+  "libcpr.1.11.2.dylib"
+  "libcpr.1.dylib"
+  "libcpr.dylib"
   "libcpr.pdb"
-  "libcpr.so"
-  "libcpr.so.1"
-  "libcpr.so.1.11.2"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,14 +1,14 @@
 # Target labels
  curl-populate
 # Source files and their labels
-/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/CMakeFiles/curl-populate
-/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/CMakeFiles/curl-populate.rule
-/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/CMakeFiles/curl-populate-complete.rule
-/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-build.rule
-/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-configure.rule
-/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-download.rule
-/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-install.rule
-/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-mkdir.rule
-/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-patch.rule
-/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-test.rule
-/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-update.rule
+/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/CMakeFiles/curl-populate
+/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/CMakeFiles/curl-populate.rule
+/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/CMakeFiles/curl-populate-complete.rule
+/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-build.rule
+/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-configure.rule
+/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-download.rule
+/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-install.rule
+/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-mkdir.rule
+/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-patch.rule
+/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-test.rule
+/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-update.rule

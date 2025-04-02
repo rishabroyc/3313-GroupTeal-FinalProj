@@ -21,8 +21,8 @@
 # SPDX-License-Identifier: curl
 #
 ###########################################################################
-if(NOT EXISTS "/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/_deps/curl-build/install_manifest.txt")
-  message(FATAL_ERROR "Cannot find install manifest: /mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/_deps/curl-build/install_manifest.txt")
+if(NOT EXISTS "/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/server/build/_deps/curl-build/install_manifest.txt")
+  message(FATAL_ERROR "Cannot find install manifest: /Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/server/build/_deps/curl-build/install_manifest.txt")
 endif()
 
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -30,13 +30,13 @@ if(NOT DEFINED CMAKE_INSTALL_PREFIX)
 endif()
 message(${CMAKE_INSTALL_PREFIX})
 
-file(READ "/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/_deps/curl-build/install_manifest.txt" _files)
+file(READ "/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/server/build/_deps/curl-build/install_manifest.txt" _files)
 string(REGEX REPLACE "\n" ";" _files "${_files}")
 foreach(_file ${_files})
   message(STATUS "Uninstalling $ENV{DESTDIR}${_file}")
   if(IS_SYMLINK "$ENV{DESTDIR}${_file}" OR EXISTS "$ENV{DESTDIR}${_file}")
     exec_program(
-      "/usr/bin/cmake" ARGS "-E remove \"$ENV{DESTDIR}${_file}\""
+      "/opt/homebrew/bin/cmake" ARGS "-E remove \"$ENV{DESTDIR}${_file}\""
       OUTPUT_VARIABLE rm_out
       RETURN_VALUE rm_retval
     )

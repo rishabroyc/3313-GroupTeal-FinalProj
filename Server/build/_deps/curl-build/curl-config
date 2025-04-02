@@ -71,7 +71,7 @@ while test "$#" -gt 0; do
     ;;
 
   --ca)
-    echo '/etc/ssl/certs/ca-certificates.crt'
+    echo 'auto'
     ;;
 
   --cc)
@@ -83,7 +83,7 @@ while test "$#" -gt 0; do
     ;;
 
   --feature|--features)
-    for feature in alt-svc AsynchDNS HSTS HTTPS-proxy IPv6 Largefile libz NTLM SSL threadsafe TLS-SRP UnixSockets ""; do
+    for feature in alt-svc AsynchDNS HSTS HTTP2 HTTPS-proxy IDN IPv6 Largefile libz NTLM SSL threadsafe UnixSockets ""; do
       test -n "$feature" && echo "$feature"
     done
     ;;
@@ -161,19 +161,19 @@ while test "$#" -gt 0; do
       CURLLIBDIR=""
     fi
     if test "Xyes" = "Xno"; then
-      echo "${CURLLIBDIR}-lcurl -lgcc -lgcc_s -lc -lgcc -lgcc_s -lssl -lcrypto -lz"
+      echo "${CURLLIBDIR}-lcurl -framework SystemConfiguration -framework Security -framework CoreFoundation -framework CoreServices -lidn2 -lz -lnghttp2"
     else
       echo "${CURLLIBDIR}-lcurl"
     fi
     ;;
 
   --ssl-backends)
-    echo 'OpenSSL v3+'
+    echo 'Secure Transport'
     ;;
 
   --static-libs)
     if test "Xno" != "Xno" ; then
-      echo "/usr/local/lib/libcurl.a"  -lgcc -lgcc_s -lc -lgcc -lgcc_s -lssl -lcrypto -lz
+      echo "/usr/local/lib/libcurl.a"  -framework SystemConfiguration -framework Security -framework CoreFoundation -framework CoreServices -lidn2 -lz -lnghttp2
     else
       echo 'curl was built with static libraries disabled' >&2
       exit 1

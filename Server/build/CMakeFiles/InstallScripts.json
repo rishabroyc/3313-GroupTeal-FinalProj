@@ -1,0 +1,17 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/server/build/cmake_install.cmake",
+		"/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/server/build/crow/cmake_install.cmake",
+		"/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/server/build/cpr/cmake_install.cmake",
+		"/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/server/build/_deps/zlib-build/cmake_install.cmake",
+		"/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/server/build/_deps/curl-build/cmake_install.cmake",
+		"/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/server/build/_deps/curl-build/docs/cmake_install.cmake",
+		"/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/server/build/_deps/curl-build/docs/libcurl/cmake_install.cmake",
+		"/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/server/build/_deps/curl-build/docs/libcurl/opts/cmake_install.cmake",
+		"/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/server/build/_deps/curl-build/lib/cmake_install.cmake",
+		"/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/server/build/cpr/cpr/cmake_install.cmake",
+		"/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/server/build/cpr/include/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,7 +1,7 @@
 # Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
-# file Copyright.txt or https://cmake.org/licensing for details.
+# file LICENSE.rst or https://cmake.org/licensing for details.
 
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION ${CMAKE_VERSION}) # this file comes with cmake
 
 function(check_file_hash has_hash hash_is_good)
   if("${has_hash}" STREQUAL "")
@@ -21,15 +21,15 @@ function(check_file_hash has_hash hash_is_good)
 
   set("${has_hash}" TRUE PARENT_SCOPE)
 
-  message(STATUS "verifying file...
-       file='/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz'")
+  message(VERBOSE "verifying file...
+       file='/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz'")
 
-  file("SHA256" "/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz" actual_value)
+  file("SHA256" "/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz" actual_value)
 
   if(NOT "${actual_value}" STREQUAL "73a4b0e99596a09fa5924a4fb7e4b995a85fda0d18a2c02ab9cf134bebce04ee")
     set("${hash_is_good}" FALSE PARENT_SCOPE)
-    message(STATUS "SHA256 hash of
-    /mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz
+    message(VERBOSE "SHA256 hash of
+    /Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz
   does not match expected value
     expected: '73a4b0e99596a09fa5924a4fb7e4b995a85fda0d18a2c02ab9cf134bebce04ee'
       actual: '${actual_value}'")
@@ -44,7 +44,7 @@ function(sleep_before_download attempt)
   endif()
 
   if(attempt EQUAL 1)
-    message(STATUS "Retrying...")
+    message(VERBOSE "Retrying...")
     return()
   endif()
 
@@ -66,59 +66,52 @@ function(sleep_before_download attempt)
     set(sleep_seconds 1200)
   endif()
 
-  message(STATUS "Retry after ${sleep_seconds} seconds (attempt #${attempt}) ...")
+  message(VERBOSE "Retry after ${sleep_seconds} seconds (attempt #${attempt}) ...")
 
   execute_process(COMMAND "${CMAKE_COMMAND}" -E sleep "${sleep_seconds}")
 endfunction()
 
-if("/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz" STREQUAL "")
-  message(FATAL_ERROR "LOCAL can't be empty")
-endif()
-
-if("https://github.com/curl/curl/releases/download/curl-8_10_1/curl-8.10.1.tar.xz" STREQUAL "")
-  message(FATAL_ERROR "REMOTE can't be empty")
-endif()
-
-if(EXISTS "/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz")
+if(EXISTS "/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz")
   check_file_hash(has_hash hash_is_good)
   if(has_hash)
     if(hash_is_good)
-      message(STATUS "File already exists and hash match (skip download):
-  file='/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz'
+      message(VERBOSE "File already exists and hash match (skip download):
+  file='/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz'
   SHA256='73a4b0e99596a09fa5924a4fb7e4b995a85fda0d18a2c02ab9cf134bebce04ee'"
       )
       return()
     else()
-      message(STATUS "File already exists but hash mismatch. Removing...")
-      file(REMOVE "/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz")
+      message(VERBOSE "File already exists but hash mismatch. Removing...")
+      file(REMOVE "/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz")
     endif()
   else()
-    message(STATUS "File already exists but no hash specified (use URL_HASH):
-  file='/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz'
+    message(VERBOSE "File already exists but no hash specified (use URL_HASH):
+  file='/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz'
 Old file will be removed and new file downloaded from URL."
     )
-    file(REMOVE "/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz")
+    file(REMOVE "/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz")
   endif()
 endif()
 
 set(retry_number 5)
 
-message(STATUS "Downloading...
-   dst='/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz'
+message(VERBOSE "Downloading...
+   dst='/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz'
    timeout='none'
    inactivity timeout='none'"
 )
-set(download_retry_codes 7 6 8 15 28)
+set(download_retry_codes 7 6 8 15 28 35)
 set(skip_url_list)
 set(status_code)
 foreach(i RANGE ${retry_number})
   if(status_code IN_LIST download_retry_codes)
     sleep_before_download(${i})
   endif()
-  foreach(url https://github.com/curl/curl/releases/download/curl-8_10_1/curl-8.10.1.tar.xz)
+  foreach(url IN ITEMS [====[https://github.com/curl/curl/releases/download/curl-8_10_1/curl-8.10.1.tar.xz]====])
     if(NOT url IN_LIST skip_url_list)
-      message(STATUS "Using src='${url}'")
+      message(VERBOSE "Using src='${url}'")
 
+      
       
       
       
@@ -126,7 +119,7 @@ foreach(i RANGE ${retry_number})
 
       file(
         DOWNLOAD
-        "${url}" "/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz"
+        "${url}" "/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz"
         SHOW_PROGRESS
         # no TIMEOUT
         # no INACTIVITY_TIMEOUT
@@ -142,10 +135,10 @@ foreach(i RANGE ${retry_number})
       if(status_code EQUAL 0)
         check_file_hash(has_hash hash_is_good)
         if(has_hash AND NOT hash_is_good)
-          message(STATUS "Hash mismatch, removing...")
-          file(REMOVE "/mnt/c/Users/risha/OneDrive - The University of Western Ontario/Year 3/3313/FinalProject/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz")
+          message(VERBOSE "Hash mismatch, removing...")
+          file(REMOVE "/Users/ellaharding/Documents/GitHub/3313-GroupTeal-FinalProj/Server/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz")
         else()
-          message(STATUS "Downloading... done")
+          message(VERBOSE "Downloading... done")
           return()
         endif()
       else()
